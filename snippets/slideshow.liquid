@@ -10,18 +10,18 @@
 				<li>
 					{{ 'slideshow_image_1.png' | asset_url | img_tag: shop.name }}
 					<div class="orbit-caption">
-						<h2>Caption One.</h2> 
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						<a class="button" href="#">Learn More</a>
+						<h2>{{ settings.slideshow_1_header }}</h2> 
+						<p>{{ settings.slideshow_1_p }}</p>
+						<a class="button" href="{{ settings.slideshow_1_link }}">{{ settings.slideshow_1_button }}</a>
 					</div>
 				</li>
 				{% if settings.slideshow_image_2_enable %}
 				<li>
 					{{ 'slideshow_image_2.png' | asset_url | img_tag: shop.name }}
 					<div class="orbit-caption">
-						<h2>Caption Two.</h2>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						<a class="button" href="#">Learn More</a>
+						<h2>{{ settings.slideshow_2_header }}</h2> 
+						<p>{{ settings.slideshow_2_p }}</p>
+						<a class="button" href="{{ settings.slideshow_2_link }}">{{ settings.slideshow_2_button }}</a>
 					</div>
 				</li>
 				{% endif %}
@@ -29,9 +29,9 @@
 				<li>
 					{{ 'slideshow_image_3.png' | asset_url | img_tag: shop.name }}
 					<div class="orbit-caption">
-						<h2>Caption Three.</h2>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-						<a class="button" href="#">Learn More</a>
+						<h2>{{ settings.slideshow_3_header }}</h2> 
+						<p>{{ settings.slideshow_3_p }}</p>
+						<a class="button" href="{{ settings.slideshow_3_link }}">{{ settings.slideshow_3_button }}</a>
 					</div>
 				</li>
 				{% endif %}
